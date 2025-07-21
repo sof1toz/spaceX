@@ -1,0 +1,242 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 1440px;
+    height: 3559px;
+    background: #010001;
+    margin: 0 auto;
+}
+
+/* верхня частина */
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 123px;
+
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 1230px;
+    height: 17px;
+
+}
+
+.nav-link gray-link {
+    color: #808080;
+
+}
+
+.logo {}
+
+.nav {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: white
+}
+
+/* частина від Falkon Heavy до землі  */
+.main {
+    height: 1250px;
+}
+
+.main-content {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 380px;
+    height: 75px;
+    top: 190px;
+    left: 259px;
+    width: 382;
+    height: 75;
+    margin: 120px 529px 26px;
+    top: 120px;
+    left: 529px;
+    opacity: 1;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: white;
+}
+
+.main-text {
+    margin: 0 auto;
+    width: 268;
+    height: 44;
+    opacity: 1;
+    top: 291px;
+    left: 586px;
+    margin: 26px 586px;
+    font-family: Roboto;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: center;
+    text-transform: lowercase;
+    color: #ffffff;
+}
+
+.main-line {
+    margin: 0 auto;
+    width: 59px;
+    height: 0px;
+    opacity: 1;
+    top: 361px;
+    left: 720px;
+    border-width: 1px;
+    margin: 6px 719px;
+}
+
+.main-earth {
+    width: 1437;
+    height: 1006;
+    opacity: 1;
+    top: 367px;
+    left: 1px;
+    margin: 6px 1px 0px;
+}
+
+/* частина з ракетой */
+.falkon {
+    display: flex;
+    height: 1718px;
+}
+
+.group {
+    padding: 340px 0 0 149px;
+}
+
+.falcon-overwiew {
+    height: 360px;
+    width: 603px;
+}
+
+.section-part {}
+
+.section-title {
+    height: 68px;
+    width: 177px;
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 140%;
+    text-transform: uppercase;
+    margin: 218px 0 45px;
+
+}
+
+.overview-text {
+    display: flex;
+    width: 603px;
+}
+
+.falcon-parameters {
+    list-style: none;
+    width: 50%;
+}
+
+.falcon-parameters-item {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 180%;
+
+}
+
+.falcon-parameters-item span {
+    color: #808080;
+
+}
+
+.left-col {}
+
+.right-col {}
+
+.section-article {
+    width: 490px;
+    height: 145px;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 180%;
+
+}
+
+.footer {
+    height: 534px;
+}
+
+.footer-logo {
+    margin: 138px 650px 43px 650px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-nav {
+    list-style: none;
+    margin: 43px 448px 28px;
+    display: flex;
+    justify-content: center;
+    width: 544;
+    height: 21;
+    opacity: 1;
+    gap: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+
+}
+
+.footer-text {
+    margin: 28px 492px 30px;
+    width: 455;
+    height: 21;
+    opacity: 1;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #808080;
+}
+
+.contact-us {
+    margin: 50px 676px 150px;
+    width: 87;
+    height: 21;
+    opacity: 1;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    text-align: center;
+    vertical-align: middle;
+
+}
