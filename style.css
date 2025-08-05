@@ -1,242 +1,648 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;800;900&display=swap);
 
-body {
-    font-family: 'Roboto', sans-serif;
-    color: #ffffff
+html {
+    scroll-behavior: smooth;
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fff;
+    background: #000;
 }
 
 .container {
+    position: relative;
     width: 1440px;
     height: 3559px;
     background: #010001;
     margin: 0 auto;
+    font-family: 'Roboto';
 }
 
-/* верхня частина */
 .header {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 123px;
+}
 
+.logo {
+    width: 138px;
+    height: 16px;
 }
 
 .header-content {
     display: flex;
     justify-content: space-between;
-    width: 1230px;
+    width: 1231px;
     height: 17px;
-
 }
-
-.nav-link gray-link {
-    color: #808080;
-
-}
-
-.logo {}
 
 .nav {
-    display: flex;
     gap: 20px;
+    display: flex;
     list-style: none;
 }
 
-.nav-link {
+.link {
     text-decoration: none;
-    font-family: Roboto;
     font-weight: 400;
     font-size: 12px;
     line-height: 100%;
     letter-spacing: 0%;
-    color: white
+    color: #fff;
 }
 
-/* частина від Falkon Heavy до землі  */
-.main {
-    height: 1250px;
+.gray-text {
+    color: #808080;
 }
 
 .main-content {
-    margin: 0 auto;
-    display: flex;
     justify-content: center;
     align-items: center;
-    width: 380px;
-    height: 75px;
-    top: 190px;
-    left: 259px;
-    width: 382;
-    height: 75;
-    margin: 120px 529px 26px;
-    top: 120px;
-    left: 529px;
-    opacity: 1;
-    font-family: Roboto;
-    font-weight: 400;
-    font-size: 64px;
-    line-height: 100%;
-    letter-spacing: 0%;
-    text-align: center;
-    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
 .main-text {
-    margin: 0 auto;
-    width: 268;
-    height: 44;
-    opacity: 1;
-    top: 291px;
-    left: 586px;
-    margin: 26px 586px;
-    font-family: Roboto;
+    position: absolute;
+    top: 190px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.falcon-heavy {
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 100%;
+}
+
+.flacon-sub {
     font-weight: 300;
     font-size: 16px;
     line-height: 140%;
-    letter-spacing: 0%;
     text-align: center;
-    text-transform: lowercase;
-    color: #ffffff;
+    width: 268px;
+    height: 44px;
 }
 
-.main-line {
-    margin: 0 auto;
-    width: 59px;
-    height: 0px;
-    opacity: 1;
+.line {
+    position: absolute;
     top: 361px;
-    left: 720px;
-    border-width: 1px;
-    margin: 6px 719px;
+    width: 59px;
+    height: 1.5px;
+    transform: rotate(90deg);
+    z-index: 2;
 }
 
-.main-earth {
-    width: 1437;
-    height: 1006;
-    opacity: 1;
-    top: 367px;
-    left: 1px;
-    margin: 6px 1px 0px;
+.earth {
+    position: absolute;
+    width: 1437px;
+    height: 1006px;
+    top: 361px;
+    z-index: 1;
 }
 
-/* частина з ракетой */
-.falkon {
-    display: flex;
+.rocket {
+    position: absolute;
+    width: 644px;
     height: 1718px;
+    top: 1307px;
+    left: 691px;
 }
 
-.group {
-    padding: 340px 0 0 149px;
-}
-
-.falcon-overwiew {
-    height: 360px;
-    width: 603px;
-}
-
-.section-part {}
-
-.section-title {
-    height: 68px;
-    width: 177px;
-    font-family: Roboto;
+.over {
+    position: absolute;
     font-weight: 700;
     font-size: 24px;
     line-height: 140%;
+    width: 177px;
+    left: 149px;
     text-transform: uppercase;
-    margin: 218px 0 45px;
-
 }
 
-.overview-text {
+.specs-all {
     display: flex;
-    width: 603px;
-}
-
-.falcon-parameters {
-    list-style: none;
-    width: 50%;
-}
-
-.falcon-parameters-item {
-    font-family: Roboto;
     font-weight: 400;
     font-size: 18px;
     line-height: 180%;
-
+    position: absolute;
+    top: 1865px;
 }
 
-.falcon-parameters-item span {
-    color: #808080;
-
+.specs-name {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    margin-top: 113px;
+    margin-left: 149px;
+    gap: 11px
 }
 
-.left-col {}
+.specs {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+    margin-top: 113px;
+    margin-left: 149px;
+    gap: 11px
+}
 
-.right-col {}
-
-.section-article {
-    width: 490px;
-    height: 145px;
-    font-family: Roboto;
+.description {
     font-weight: 400;
     font-size: 16px;
     line-height: 180%;
-
+    width: 630px;
+    height: 145px;
+    position: absolute;
+    top: 2443px;
 }
 
-.footer {
-    height: 534px;
+.overview-text {
+    margin-top: 113px;
+    margin-left: 149px;
 }
 
-.footer-logo {
-    margin: 138px 650px 43px 650px;
+.social-media {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
     display: flex;
     justify-content: center;
-}
-
-.footer-nav {
-    list-style: none;
-    margin: 43px 448px 28px;
-    display: flex;
-    justify-content: center;
-    width: 544;
-    height: 21;
-    opacity: 1;
     gap: 20px;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 100%;
+    list-style: none;
+}
+
+.footer-content {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
 
 }
 
-.footer-text {
-    margin: 28px 492px 30px;
-    width: 455;
-    height: 21;
-    opacity: 1;
+.social-media {
     font-weight: 400;
     font-size: 18px;
     line-height: 100%;
-    color: #808080;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
 }
 
-.contact-us {
-    margin: 50px 676px 150px;
-    width: 87;
-    height: 21;
-    opacity: 1;
-    font-family: Roboto;
-    font-weight: 400;
+.spacex {
+    width: 138px;
+    height: 17px;
+}
+
+.contact-button {
+    width: 260px;
+    height: 60px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 6px;
     font-size: 18px;
-    line-height: 100%;
-    text-align: center;
-    vertical-align: middle;
+}
+
+.contact-button:hover {
+    background-color: white;
+    color: black;
+}
+
+.contact-button:active {
+    transform: translateY(1px);
+}
+
+@media screen and (max-width: 1439px) {
+    body {
+        background: #ff0000;
+    }
+
+    .container {
+        position: relative;
+        width: 768px;
+
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    .logo {
+        width: 138px;
+        height: 16px;
+    }
+
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 17px;
+    }
+
+    .nav {
+        gap: 20px;
+        display: flex;
+        list-style: none;
+    }
+
+    .link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #fff;
+    }
+
+    .gray-text {
+        color: #808080;
+    }
+
+    .main-content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text {
+        position: absolute;
+        top: 190px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .falcon-heavy {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 100%;
+    }
+
+    .flacon-sub {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        width: 268px;
+        height: 44px;
+    }
+
+    .line {
+        position: absolute;
+        top: 361px;
+        width: 59px;
+        height: 1.5px;
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+
+    .earth {
+        position: absolute;
+        width: 1437px;
+        height: 1006px;
+        top: 361px;
+        z-index: 1;
+    }
+
+    .rocket {
+        position: absolute;
+        width: 644px;
+        height: 1718px;
+        top: 1307px;
+        left: 691px;
+    }
+
+    .over {
+        position: absolute;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        width: 177px;
+        left: 149px;
+        text-transform: uppercase;
+    }
+
+    .specs-all {
+        display: flex;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        position: absolute;
+        top: 1865px;
+    }
+
+    .specs-name {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 113px;
+        margin-left: 149px;
+        gap: 11px
+    }
+
+    .specs {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin-top: 113px;
+        margin-left: 149px;
+        gap: 11px
+    }
+
+    .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        width: 630px;
+        height: 145px;
+        position: absolute;
+        top: 2443px;
+    }
+
+    .overview-text {
+        margin-top: 113px;
+        margin-left: 149px;
+    }
+
+    .social-media {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .footer-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+
+    }
+
+    .social-media {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .spacex {
+        width: 138px;
+        height: 17px;
+    }
+
+    .contact-button {
+        width: 260px;
+        height: 60px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+
+    .contact-button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .contact-button:active {
+        transform: translateY(1px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    body {
+        background: #2a7809;
+    }
+
+    .container {
+        position: relative;
+        width: 360px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+    }
+
+    .logo {
+        width: 138px;
+        height: 16px;
+    }
+
+    .header-content {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 17px;
+    }
+
+    .nav {
+        gap: 20px;
+        display: flex;
+        list-style: none;
+    }
+
+    .link {
+        text-decoration: none;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        color: #fff;
+    }
+
+    .gray-text {
+        color: #808080;
+    }
+
+    .main-content {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-text {
+        position: absolute;
+        top: 190px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .falcon-heavy {
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 100%;
+    }
+
+    .flacon-sub {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+        text-align: center;
+        width: 268px;
+        height: 44px;
+    }
+
+    .line {
+        position: absolute;
+        top: 361px;
+        width: 59px;
+        height: 1.5px;
+        transform: rotate(90deg);
+        z-index: 2;
+    }
+
+    .earth {
+        position: absolute;
+        width: 1437px;
+        height: 1006px;
+        top: 361px;
+        z-index: 1;
+    }
+
+    .rocket {
+        position: absolute;
+        width: 644px;
+        height: 1718px;
+        top: 1307px;
+        left: 691px;
+    }
+
+    .over {
+        position: absolute;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 140%;
+        width: 177px;
+        left: 149px;
+        text-transform: uppercase;
+    }
+
+    .specs-all {
+        display: flex;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 180%;
+        position: absolute;
+        top: 1865px;
+    }
+
+    .specs-name {
+        display: flex;
+        align-items: start;
+        flex-direction: column;
+        margin-top: 113px;
+        margin-left: 149px;
+        gap: 11px
+    }
+
+    .specs {
+        display: flex;
+        align-items: end;
+        flex-direction: column;
+        margin-top: 113px;
+        margin-left: 149px;
+        gap: 11px
+    }
+
+    .description {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 180%;
+        width: 630px;
+        height: 145px;
+        position: absolute;
+        top: 2443px;
+    }
+
+    .overview-text {
+        margin-top: 113px;
+        margin-left: 149px;
+    }
+
+    .social-media {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .footer-content {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+
+    }
+
+    .social-media {
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 100%;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .spacex {
+        width: 138px;
+        height: 17px;
+    }
+
+    .contact-button {
+        width: 260px;
+        height: 60px;
+        background-color: transparent;
+        color: white;
+        border: 2px solid white;
+        border-radius: 6px;
+        font-size: 18px;
+    }
+
+    .contact-button:hover {
+        background-color: white;
+        color: black;
+    }
+
+    .contact-button:active {
+        transform: translateY(1px);
+    }
 
 }
